@@ -1,0 +1,188 @@
+body{
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  color: hsl(0, 36%, 70%);
+  font-family: josefin sans;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.75rem;
+}
+
+picture{
+  text-align: center;
+  display: block;
+}
+
+.logo{
+  width: 6.5rem;
+  margin: 2rem;
+}
+
+.coming{
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.text{
+  color: hsl(0, 36%, 70%);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+.email-container{
+ display: flex;
+}
+
+.email-box{
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(0, 100%, 98%);
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 2rem;
+  width: 15rem;
+  margin-right: auto;
+}
+
+.email-box::placeholder{
+  color: hsl(0, 36%, 70%);
+  font-family: josefin sans;
+}
+
+.submit-button{
+  background-color: hsl(0, 74%, 74%);
+  padding: 1rem 2rem;
+  margin-left: -3rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  background-color: hsl(0, 88%, 84%);
+  transition: 0.2s;
+  box-shadow: 0px 6px 10px rgba(15, 15, 15, 0.3);
+}
+
+.error{
+  border: 2px solid hsl(0, 93%, 68%);
+  background-image: url('images/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+.error-text{
+  color: hsl(0, 93%, 68%);
+  font-size: 0.75rem;
+  margin-left: -7.25rem;
+  margin-top: 0.5rem;
+}
+
+.success{
+  border: 2px solid hsl(199, 80%, 51%);
+}
+
+@media (min-width: 376px){
+  .graphic{
+    width: 425px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 621px){
+  .graphic{
+    width: 500px;
+    margin: auto;
+    display: block;
+  }
+
+  .text{
+    max-width: 40rem;
+  }
+}
+
+@media (min-width: 1025px){
+  body{
+    background-image: url('images/bg-pattern-desktop.svg');
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "content" "image";
+  }
+
+  form{
+    grid-area: content;
+    margin-left: 8rem;
+  }
+
+  h2{
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    margin-top: 5rem;
+  }
+
+  .logo{
+    width: 10rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+  }
+
+  .text{
+    text-align: left;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    margin: 0 5rem 2rem 0;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .logo{
+    grid-area: content;
+  }
+
+  .graphic{
+    margin-right: 0;
+    width: 610px;
+  }
+
+  .email-box{
+    width: 23rem;
+    margin-right: 0;
+  }
+
+  .email-container{
+    width: 100%;
+  }
+
+  .submit-button{
+    width: 6rem;
+  }
+
+  .error{
+    background-position: 85%;
+  }
+  
+  .error-text{
+    margin-left: -21rem;
+    margin-top: 0.5rem;
+  }
+  
+}

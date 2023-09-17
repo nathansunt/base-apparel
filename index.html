@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+</head>
+<body>
+  <main>
+    <img class="logo" src="images/logo.svg" alt="base-apparel-logo">
+    <picture class="image">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 1025px)">
+      <img class="graphic" src="images/hero-mobile.jpg" alt="female">
+    </picture>
+    <form action="#" id="form" class="container">
+      <h2>
+        WE'RE <span class="coming">COMING SOON</span>
+      </h2>
+      <p class="text">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <div class="email-container" id="email-container">
+        <input type="email" id="email" class="email-box" placeholder="Email Address">
+        <button type="submit" id="submit" class="submit-button"><img src="images/icon-arrow.svg"></button>
+      </div>
+      <span id="error-text"></span>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
